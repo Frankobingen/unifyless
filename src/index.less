@@ -1,0 +1,49 @@
+@import "variables";
+@import "helpers";
+
+.normalize(@font: Helvetica, sans-serif) {
+  html, body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: @font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /**
+   * Make all elements display: block and remove all paddings
+   * and margins. Everything shall be styled based on this
+   * in order to remove weird cross browser issues with default
+   * styles.
+   */
+  body * {
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    font-family: @font;
+    font-weight: normal;
+    direction: ltr;
+    -webkit-appearance: unset;
+  }
+
+  /**
+   * Prevent default coloring for anchor tags. Default color
+   * should equal the currently set color of the parent.
+   */
+  a {
+    color: inherit;
+  }
+
+  /**
+   * Ensure pointer for all buttons and anchors
+   */
+  a, button, a *, button * {
+    cursor: pointer;
+  }
+}

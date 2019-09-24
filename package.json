@@ -1,0 +1,14 @@
+{
+  "name": "unifyless",
+  "version": "0.0.1",
+  "description": "Reuseable LESS helpers & default variables",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "less",
+    "helper",
+    "normalize"
+  ],
+  "author": "frank@finevisuals.de",
+  "license": "MIT"
+}

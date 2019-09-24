@@ -1,0 +1,55 @@
+.row(@align: flex-start, @justify: flex-start, @wrap: nowrap) {
+  display: flex;
+  flex-direction: row;
+  align-items: @align;
+  justify-content: @justify;
+  flex-wrap: @wrap;
+}
+
+.column(@align: flex-start, @justify: flex-start, @wrap: nowrap) {
+  display: flex;
+  flex-direction: column;
+  align-items: @align;
+  justify-content: @justify;
+  flex-wrap: @wrap;
+}
+
+.max(@max-width) {
+  width: 100%;
+  max-width: @max-width;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.stretch(@position: absolute) {
+  position: @position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.center() {
+  position: absolute;
+  top: 50%;
+  left: 0; right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+
+.shadow() {
+  box-shadow: 0 0 15px 1px fade(@dark, 15%);
+}
+
+.animate(@property: all) {
+  transition: @property 0.25s ease-in-out;
+}
+
+.background(@background) {
+  background: @background;
+  color: contrast(@background, @text-dark, @text-light);
+}
+

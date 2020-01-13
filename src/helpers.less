@@ -1,3 +1,123 @@
+.r-flex(
+  @xs-direction, @xs-align, @xs-justify, @xs-wrap,
+  @s-direciton, @s-align, @s-justify, @s-wrap,
+  @m-direciton, @m-align, @m-justify, @m-wrap,
+  @l-direciton, @l-align, @l-justify, @l-wrap,
+  @xl-direciton, @xl-align, @xl-justify, @xl-wrap
+) {
+  @media @xs {
+    .flex(@xs-direction, @xs-align, @xs-justify, @xs-wrap);
+  }
+
+  @media @s {
+    .flex(@s-direction, @s-align, @s-justify, @s-wrap);
+  }
+
+  @media @m {
+    .flex(@m-direction, @m-align, @m-justify, @m-wrap);
+  }
+
+  @media @l {
+    .flex(@l-direction, @l-align, @l-justify, @l-wrap);
+  }
+
+  @media @xl {
+    .flex(@xl-direction, @xl-align, @xl-justify, @xl-wrap);
+  }
+}
+
+.r-mp(
+  @xs-margin, @xs-padding,
+  @s-margin, @s-padding,
+  @m-margin, @m-padding,
+  @l-margin, @l-padding,
+  @xl-margin, @xl-padding
+) {
+  @media @xs {
+    .mp(@xs-margin, @xs-padding);
+  }
+
+  @media @s {
+    .mp(@s-margin, @s-padding);
+  }
+
+  @media @m {
+    .mp(@m-margin, @m-padding);
+  }
+
+  @media @l {
+    .mp(@l-margin, @l-padding);
+  }
+
+  @media @xl {
+    .mp(@xl-margin, @xl-padding);
+  }
+}
+
+.r-max(
+  @xs-max-width,
+  @s-max-width,
+  @m-max-width,
+  @l-max-width,
+  @xl-max-width
+) {
+  @media @xs {
+    .max(@xs-max-width);
+  }
+
+  @media @s {
+    .max(@s-max-width);
+  }
+
+  @media @m {
+    .max(@m-max-width);
+  }
+
+  @media @l {
+    .max(@l-max-width);
+  }
+
+  @media @xl {
+    .max(@xl-max-width);
+  }
+}
+
+.r-size(
+  @xs-width, @xs-height,
+  @s-width, @s-height,
+  @m-width, @m-height,
+  @l-width, @l-height,
+  @xl-width, @xl-height
+) {
+  @media @xs {
+    .size(@xs-width, @xs-height);
+  }
+
+  @media @s {
+    .size(@s-width, @s-height);
+  }
+
+  @media @m {
+    .size(@m-width, @m-height);
+  }
+
+  @media @l {
+    .size(@l-width, @l-height);
+  }
+
+  @media @xl {
+    .size(@xl-width, @xl-height);
+  }
+}
+
+.flex(@direction: row, @align: flex-start, @justify: flex-start, @wrap: nowrap) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  justify-content: @justify;
+  flex-wrap: @wrap;
+}
+
 .row(@align: flex-start, @justify: flex-start, @wrap: nowrap) {
   display: flex;
   flex-direction: row;

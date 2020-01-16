@@ -82,6 +82,36 @@
   }
 }
 
+.xs-size(@xs-width, @xs-height) {
+  @media @xs {
+    .size(@xs-width, @xs-height);
+  }
+}
+
+.s-size(@s-width, @s-height) {
+  @media @s {
+    .size(@s-width, @s-height);
+  }
+}
+
+.m-size(@m-width, @m-height) {
+  @media @m {
+    .size(@m-width, @m-height);
+  }
+}
+
+.l-size(@l-width, @l-height) {
+  @media @l {
+    .size(@l-width, @l-height);
+  }
+}
+
+.xl-size(@xl-width, @xl-height) {
+  @media @xl {
+    .size(@xl-width, @xl-height);
+  }
+}
+
 .r-size(
   @xs-width, @xs-height,
   @s-width, @s-height,
@@ -89,25 +119,11 @@
   @l-width, @l-height,
   @xl-width, @xl-height
 ) {
-  @media @xs {
-    .size(@xs-width, @xs-height);
-  }
-
-  @media @s {
-    .size(@s-width, @s-height);
-  }
-
-  @media @m {
-    .size(@m-width, @m-height);
-  }
-
-  @media @l {
-    .size(@l-width, @l-height);
-  }
-
-  @media @xl {
-    .size(@xl-width, @xl-height);
-  }
+  .xs-size(@xs-width, @xs-height);
+  .s-size(@s-width, @s-height);
+  .m-size(@m-width, @m-height);
+  .l-size(@l-width, @l-height);
+  .xl-size(@xl-width, @xl-height);
 }
 
 .flex(@direction: row, @align: flex-start, @justify: flex-start, @wrap: nowrap) {

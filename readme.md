@@ -10,6 +10,7 @@ If you want to render default html styling (`<li>`, `<ol>` etc.) you should wrap
 
 ```html
 <div class="html-text">
+  <h1>Headline</h1>
   <p>This is html Text</p>
   <ul>
     <li>With List Styling</li>

@@ -6,6 +6,18 @@ This module provides useful less helper functions and a normalize function to qu
 
 Can be used by calling `.normalize()` - must be done in the root (not within html or body).
 
+If you want to render default html styling (`<li>`, `<ol>` etc.) you should wrap them into an element with the class `html-text`.
+
+```html
+<div class="html-text">
+  <p>This is html Text</p>
+  <ul>
+    <li>With List Styling</li>
+  </ul>
+  <p>And default margins & line-heights.</p>
+</div>
+```
+
 ## Helpers
 
 ### flex

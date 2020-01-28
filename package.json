@@ -1,6 +1,6 @@
 {
   "name": "unifyless",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Reuseable LESS helpers & default variables",
   "main": "index.js",
   "scripts": {},

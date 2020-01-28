@@ -250,4 +250,44 @@
   a, button, a *, button * {
     cursor: pointer;
   }
+
+  .html-text * {
+    line-height: 1.2;
+
+    + * {
+      margin-top: 1em;
+    }
+
+    &ul, &ol {
+      padding-left: 2rem;
+
+      li {
+        display: list-item;
+
+        + li {
+          margin-top: 0.75em;
+        }
+      }
+    }
+
+    &ul {
+      list-style-type: circle;
+    }
+
+    &ol {
+      list-style-type: decimal;
+    }
+
+    img {
+      .size(100%, auto);
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: @primary;
+      }
+    }
+  }
 }
